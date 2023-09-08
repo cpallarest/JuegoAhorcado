@@ -1,0 +1,89 @@
+@font-face {
+    font-family: monster ;
+    src: url(public/Fonts/Melted\ Monster.ttf);
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url(public/images/ahorcado_background.jpeg) no-repeat center;
+    background-size: cover;
+    font-family: monster;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+h1 {
+    color: #571F13;
+    font-size: 4em;
+}
+
+.hangman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#hangman-image{
+    width: 300px;
+    opacity: .9;
+
+}
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.word-container {
+    margin-bottom: 20px;
+}
+
+.word {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.letters-container {
+    margin-bottom: 20px;
+}
+
+#letter_input {
+    padding: 5px;
+    font-size: 18px;
+}
+
+#guessButton {
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#guessButton:hover {
+    background-color: #555;
+}
+
+.letters-failed {
+    font-size: 18px;
+    color: #a90404;
+}
+
+#newWordButton{
+    display: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 1em;
+}
+
